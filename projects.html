@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Gallery | Circle City Glass</title>
+    <meta name="description" content="View our portfolio of completed window installation and repair projects for residential and commercial clients in Dothan, AL.">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Circle City Glass Logo" style="width: 129px; height: 60px;">
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600">About Us</a>
+                <a href="services.html" class="text-gray-600 hover:text-blue-600">Services</a>
+                <a href="projects.html" class="text-blue-800 font-bold hover:text-blue-600">Projects</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact Us</a>
+            </div>
+            <a href="contact.html" class="hidden md:block bg-yellow-500 text-white font-bold py-2 px-4 rounded-full hover:bg-yellow-600 transition duration-300">Get a Free Quote</a>
+            <button id="mobile-menu-button" class="md:hidden flex items-center">
+                <i class="fas fa-bars text-2xl text-gray-800"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-gray-200">About Us</a>
+            <a href="services.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Services</a>
+            <a href="projects.html" class="block py-2 px-4 text-sm bg-gray-200 font-bold">Projects</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact Us</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm bg-yellow-500 text-white text-center font-bold hover:bg-yellow-600">Get a Free Quote</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero-section text-white text-center" style="background-image: linear-gradient(rgba(45, 55, 72, 0.7), rgba(45, 55, 72, 0.7)), url('images/7.jpg');">
+            <div class="container mx-auto px-6 py-24">
+                <h1 class="text-4xl md:text-5xl font-extrabold wow animate__animated animate__fadeInDown">Our Work</h1>
+                <p class="text-lg mt-4 wow animate__animated animate__fadeInUp">A showcase of our commitment to quality and craftsmanship.</p>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div id="gallery-filters" class="flex justify-center space-x-2 md:space-x-4 mb-12 wow animate__animated animate__fadeIn">
+                    <button class="gallery-filter-button active" data-filter="all">All</button>
+                    <button class="gallery-filter-button" data-filter="residential">Residential</button>
+                    <button class="gallery-filter-button" data-filter="commercial">Commercial</button>
+                    <button class="gallery-filter-button" data-filter="repair">Repairs</button>
+                </div>
+
+                <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="gallery-item wow animate__animated animate__zoomIn" data-category="residential">
+                        <a href="images/8.jpg" class="glightbox" data-gallery="gallery1" data-title="Modern Home Window Upgrade">
+                            <img src="images/8.jpg" alt="Modern Home Window Upgrade" class="w-full h-64 object-cover rounded-lg shadow-md">
+                            <div class="gallery-item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                                <p>Modern Home Upgrade</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-item wow animate__animated animate__zoomIn" data-category="commercial">
+                        <a href="images/9.jpg" class="glightbox" data-gallery="gallery1" data-title="Storefront Glass Installation">
+                            <img src="images/9.jpg" alt="Storefront Glass Installation" class="w-full h-64 object-cover rounded-lg shadow-md">
+                            <div class="gallery-item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                                <p>Storefront Installation</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-item wow animate__animated animate__zoomIn" data-category="repair">
+                        <a href="images/10.jpg" class="glightbox" data-gallery="gallery1" data-title="Cracked Pane Replacement">
+                            <img src="images/10.jpg" alt="Cracked Pane Replacement" class="w-full h-64 object-cover rounded-lg shadow-md">
+                             <div class="gallery-item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                                <p>Cracked Pane Replacement</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-item wow animate__animated animate__zoomIn" data-category="residential">
+                        <a href="images/11.jpg" class="glightbox" data-gallery="gallery1" data-title="Custom Bay Window">
+                            <img src="images/11.jpg" alt="Custom Bay Window" class="w-full h-64 object-cover rounded-lg shadow-md">
+                             <div class="gallery-item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                                <p>Custom Bay Window</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-item wow animate__animated animate__zoomIn" data-category="commercial">
+                         <a href="images/12.jpg" class="glightbox" data-gallery="gallery1" data-title="Office Building Energy-Efficient Windows">
+                            <img src="images/12.jpg" alt="Office Building Windows" class="w-full h-64 object-cover rounded-lg shadow-md">
+                             <div class="gallery-item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                                <p>Office Building Windows</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-item wow animate__animated animate__zoomIn" data-category="residential">
+                        <a href="images/13.jpg" class="glightbox" data-gallery="gallery1" data-title="Full Home Window Replacement">
+                            <img src="images/13.jpg" alt="Full Home Window Replacement" class="w-full h-64 object-cover rounded-lg shadow-md">
+                             <div class="gallery-item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                                <p>Full Home Replacement</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                 <div>
+                    <h3 class="text-lg font-bold mb-4">Circle City Glass</h3>
+                    <p class="text-gray-400">1663 Montgomery Hwy, Dothan, AL 36303</p>
+                    <p class="text-gray-400">Email: circlecglass.com@circlecglass.com</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white">Projects</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Service Hours</h3>
+                    <p class="text-gray-400">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                    <p class="text-gray-400">Saturday: By Appointment</p>
+                    <p class="text-gray-400">Sunday: Closed</p>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; 2025 Circle City Glass. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

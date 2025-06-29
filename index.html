@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle City Glass - Window Installation, Repair & Cleaning</title>
+    <meta name="description" content="Circle City Glass offers professional window installation, repair, and cleaning services in Dothan, AL. Contact us for a free quote.">
+    <meta name="keywords" content="window installation, window repair, window cleaning, glass replacement, Dothan, AL">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Circle City Glass Logo" style="width: 129px; height: 60px;">
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-800 hover:text-blue-600">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600">About Us</a>
+                <a href="services.html" class="text-gray-600 hover:text-blue-600">Services</a>
+                <a href="projects.html" class="text-gray-600 hover:text-blue-600">Projects</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact Us</a>
+            </div>
+            <a href="contact.html" class="hidden md:block bg-yellow-500 text-white font-bold py-2 px-4 rounded-full hover:bg-yellow-600 transition duration-300">Get a Free Quote</a>
+            <button id="mobile-menu-button" class="md:hidden flex items-center">
+                <i class="fas fa-bars text-2xl text-gray-800"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-gray-200">About Us</a>
+            <a href="services.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Services</a>
+            <a href="projects.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Projects</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact Us</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm bg-yellow-500 text-white text-center font-bold hover:bg-yellow-600">Get a Free Quote</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section text-white text-center">
+            <div class="container mx-auto px-6 py-32">
+                <h1 class="text-5xl font-extrabold mb-4 wow animate__animated animate__fadeInDown">Expert Window Solutions in Dothan</h1>
+                <p class="text-lg mb-8 wow animate__animated animate__fadeInUp">Professional Installation, Repair, and Cleaning Services You Can Trust</p>
+                <a href="contact.html" class="bg-yellow-500 text-white font-bold py-3 px-8 rounded-full hover:bg-yellow-600 transition duration-300 wow animate__animated animate__pulse">Get a Free Quote</a>
+            </div>
+        </section>
+
+        <section class="bg-white py-16">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4 wow animate__animated animate__fadeIn">Your Trusted Partner for Crystal Clear Windows</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto wow animate__animated animate__fadeInUp">Circle City Glass is a premier window service provider in Dothan, AL, dedicated to delivering exceptional craftsmanship and unparalleled customer service for all your window needs.</p>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 wow animate__animated animate__fadeIn">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="service-card bg-white p-8 rounded-lg shadow-lg text-center wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                        <i class="fas fa-ruler-combined text-4xl text-blue-800 mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Window Installation</h3>
+                        <p class="text-gray-600">Perfectly fitted windows to enhance your home's beauty and efficiency.</p>
+                    </div>
+                    <div class="service-card bg-white p-8 rounded-lg shadow-lg text-center wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                        <i class="fas fa-tools text-4xl text-blue-800 mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Window Repair</h3>
+                        <p class="text-gray-600">Fast and reliable repairs for cracked, foggy, or broken windows.</p>
+                    </div>
+                    <div class="service-card bg-white p-8 rounded-lg shadow-lg text-center wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                        <i class="fas fa-spray-can-sparkles text-4xl text-blue-800 mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Window Cleaning</h3>
+                        <p class="text-gray-600">Streak-free cleaning for a brighter, clearer view.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 wow animate__animated animate__fadeIn">Why Choose Us?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                    <div class="wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
+                        <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-award text-3xl text-blue-800"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800">Experienced Professionals</h3>
+                    </div>
+                    <div class="wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
+                        <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-check-circle text-3xl text-blue-800"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800">Quality Materials</h3>
+                    </div>
+                    <div class="wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+                        <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-handshake text-3xl text-blue-800"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800">Customer Satisfaction</h3>
+                    </div>
+                    <div class="wow animate__animated animate__fadeIn" data-wow-delay="0.7s">
+                        <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-wallet text-3xl text-blue-800"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800">Affordable Pricing</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 wow animate__animated animate__fadeIn">Featured Projects</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="project-card wow animate__animated animate__zoomIn" data-wow-delay="0.1s">
+                        <img src="images/1.jpg" alt="Residential Window Installation" class="w-full h-64 object-cover rounded-lg shadow-md">
+                        <div class="project-info">
+                            <h3 class="text-lg font-bold">Residential Installation</h3>
+                        </div>
+                    </div>
+                    <div class="project-card wow animate__animated animate__zoomIn" data-wow-delay="0.3s">
+                        <img src="images/2.jpg" alt="Commercial Glass Repair" class="w-full h-64 object-cover rounded-lg shadow-md">
+                        <div class="project-info">
+                            <h3 class="text-lg font-bold">Commercial Repair</h3>
+                        </div>
+                    </div>
+                    <div class="project-card wow animate__animated animate__zoomIn" data-wow-delay="0.5s">
+                        <img src="images/3.jpg" alt="Custom Window Design" class="w-full h-64 object-cover rounded-lg shadow-md">
+                        <div class="project-info">
+                            <h3 class="text-lg font-bold">Custom Design</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-section bg-blue-800 text-white py-20 overflow-hidden">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4 wow animate__animated animate__fadeIn">What Our Clients Say</h2>
+                <div class="relative max-w-3xl mx-auto mt-10">
+                    <div id="testimonial-carousel" class="relative">
+                        <div class="testimonial-item">
+                            <p class="text-xl italic mb-4">"Circle City Glass did an amazing job on our new windows. The team was professional, and the results are fantastic!"</p>
+                            <p class="font-bold text-yellow-400">- John D.</p>
+                        </div>
+                        <div class="testimonial-item hidden">
+                            <p class="text-xl italic mb-4">"Fast, friendly, and affordable. They repaired our storefront window quickly and it looks great. Highly recommend."</p>
+                            <p class="font-bold text-yellow-400">- Sarah K.</p>
+                        </div>
+                        <div class="testimonial-item hidden">
+                            <p class="text-xl italic mb-4">"The cleaning service was impeccable. Our windows have never looked better. True professionals from start to finish."</p>
+                            <p class="font-bold text-yellow-400">- Mike R.</p>
+                        </div>
+                    </div>
+                    <button id="prev-testimonial" class="testimonial-nav left-0"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next-testimonial" class="testimonial-nav right-0"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bg-yellow-500 text-white">
+            <div class="container mx-auto px-6 py-12 text-center">
+                <h2 class="text-3xl font-bold mb-4 wow animate__animated animate__pulse">Ready to Transform Your Windows?</h2>
+                <p class="mb-6">Contact us today for a free, no-obligation quote.</p>
+                <a href="tel:+13345551234" class="bg-white text-yellow-500 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300">Call Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Circle City Glass</h3>
+                    <p class="text-gray-400">1663 Montgomery Hwy, Dothan, AL 36303</p>
+                    <p class="text-gray-400">Email: circlecglass.com@circlecglass.com</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white">Projects</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Service Hours</h3>
+                    <p class="text-gray-400">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                    <p class="text-gray-400">Saturday: By Appointment</p>
+                    <p class="text-gray-400">Sunday: Closed</p>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; 2025 Circle City Glass. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

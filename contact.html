@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Circle City Glass</title>
+    <meta name="description" content="Get in touch with Circle City Glass for a free quote or service inquiry. Visit our Dothan, AL office, call us, or send us a message online.">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Circle City Glass Logo" style="width: 129px; height: 60px;">
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600">About Us</a>
+                <a href="services.html" class="text-gray-600 hover:text-blue-600">Services</a>
+                <a href="projects.html" class="text-gray-600 hover:text-blue-600">Projects</a>
+                <a href="contact.html" class="text-blue-800 font-bold hover:text-blue-600">Contact Us</a>
+            </div>
+            <a href="contact.html" class="hidden md:block bg-yellow-500 text-white font-bold py-2 px-4 rounded-full hover:bg-yellow-600 transition duration-300">Get a Free Quote</a>
+            <button id="mobile-menu-button" class="md:hidden flex items-center">
+                <i class="fas fa-bars text-2xl text-gray-800"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-gray-200">About Us</a>
+            <a href="services.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Services</a>
+            <a href="projects.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Projects</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm bg-gray-200 font-bold">Contact Us</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm bg-yellow-500 text-white text-center font-bold hover:bg-yellow-600">Get a Free Quote</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero-section text-white text-center" style="background-image: linear-gradient(rgba(45, 55, 72, 0.7), rgba(45, 55, 72, 0.7)), url('images/14.jpg');">
+            <div class="container mx-auto px-6 py-24">
+                <h1 class="text-4xl md:text-5xl font-extrabold wow animate__animated animate__fadeInDown">Get In Touch</h1>
+                <p class="text-lg mt-4 wow animate__animated animate__fadeInUp">We're here to help. Contact us for a free quote or any inquiries.</p>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-3 gap-12">
+                    <div class="lg:col-span-2 bg-gray-50 p-8 rounded-lg shadow-lg wow animate__animated animate__fadeInLeft">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
+                        <form action="#" method="POST">
+                            <div class="grid sm:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
+                                    <input type="text" id="name" name="name" class="contact-input" placeholder="John Doe" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address</label>
+                                    <input type="email" id="email" name="email" class="contact-input" placeholder="you@example.com" required>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="phone" class="block text-gray-700 font-semibold mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="contact-input" placeholder="(123) 456-7890">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                                <textarea id="message" name="message" rows="5" class="contact-input" placeholder="How can we help you today?" required></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full bg-yellow-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition duration-300">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="space-y-8 wow animate__animated animate__fadeInRight">
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Contact Information</h3>
+                            <div class="space-y-4 text-gray-600">
+                                <p><i class="fas fa-map-marker-alt text-blue-800 w-6"></i> 1663 Montgomery Hwy,<br><span class="ml-6">Dothan, AL 36303</span></p>
+                                <p><i class="fas fa-envelope text-blue-800 w-6"></i> circlecglass.com@circlecglass.com</p>
+                                <p><i class="fas fa-phone text-blue-800 w-6"></i> (334) 792-5171</p>
+                                <p class="font-bold pt-2"><i class="fas fa-bolt text-blue-800 w-6"></i> Emergency Contact Available</p>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Office Hours</h3>
+                             <div class="space-y-2 text-gray-600">
+                                <p><span class="font-semibold w-24 inline-block">Mon - Fri:</span> 8:00 AM - 5:00 PM</p>
+                                <p><span class="font-semibold w-24 inline-block">Saturday:</span> By Appointment</p>
+                                <p><span class="font-semibold w-24 inline-block">Sunday:</span> Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wow animate__animated animate__fadeInUp">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3417.385018383386!2d-85.42093488493!3d31.18196998151951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8892f7e7d6b3a0db%3A0x28ab5a321a5d6f1!2sCircle%20City%20Glass!5e0!3m2!1sen!2sus!4v1627931323345!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white">
+       <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                 <div>
+                    <h3 class="text-lg font-bold mb-4">Circle City Glass</h3>
+                    <p class="text-gray-400">1663 Montgomery Hwy, Dothan, AL 36303</p>
+                    <p class="text-gray-400">Email: circlecglass.com@circlecglass.com</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white">Projects</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Service Hours</h3>
+                    <p class="text-gray-400">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                    <p class="text-gray-400">Saturday: By Appointment</p>
+                    <p class="text-gray-400">Sunday: Closed</p>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; 2025 Circle City Glass. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
